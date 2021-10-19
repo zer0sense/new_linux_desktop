@@ -1,0 +1,53 @@
+---
+- name: Install Base Package
+  become: true
+  become_method: sudo
+  package: 
+    name: 
+      - tmux
+      - htop
+      - zsh
+      - zsh-syntax-highlighting
+      - curl
+      - cmake
+      - pkg-config
+      - neofetch
+      - spice-vdagent
+      - snapd
+      - flatpack
+
+- name: Copy Alias File
+  copy:
+    src: files/alias
+    dest: "{{ home }}/.alias"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+
+- name: Copy BASH File
+  copy:
+    src: files/bash
+    dest: "{{ home }}/.bashrc"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+
+- name: Copy ZSH File
+    copy:
+      src: files/zsh
+      dest: "{{ home }}/.zshrc"
+      owner: "{{ user }}"
+      group: "{{ user }}"
+
+- name: Copy TMUX config
+    copy:
+      src: files/tmux
+      dest: "{{ home }}/.tmux.conf"
+      owner: "{{ user }}"
+      group: "{{ user }}"
+
+ - name: Make git Folder
+    file:
+      path: "{{ home }}/git/"
+      state: directory
+      owner: "{{ user }}"
+      group: "{{ user }}"
+      mode: 0775

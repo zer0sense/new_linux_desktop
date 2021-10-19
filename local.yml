@@ -1,0 +1,26 @@
+---
+- hosts: all
+  connection: local
+  vars:
+    user: "{{ lookup('env', 'USER') }}"
+    home: "{{ lookup('env', 'HOME') }}"
+  pre_tasks:
+    - name: pre-run | update package cache (arch)
+      become: true
+      tags: always
+      pacman: update_cache=yes
+      changed_when: False
+      when: ansible_distribution == "Archlinux"
+
+    - name: pre-run | update package cache (debian, etc)
+      tags: always
+      become: true
+      apt: update_cache=yes
+      changed_when: False
+      when: ansible_distribution in ["Debian", "Ubuntu"]
+
+
+  roles:
+    - role: base
+    - role: applications
+
