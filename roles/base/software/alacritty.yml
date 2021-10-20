@@ -1,5 +1,7 @@
 ---
 - name: Install Alacritty
+  package: alacritty
+    state: present
 
 - name: Copy Alacritty config
   copy:

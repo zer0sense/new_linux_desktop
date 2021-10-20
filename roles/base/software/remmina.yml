@@ -1,7 +1,7 @@
 ---
-- name: Install Spotify
+- name: Install Remina
   become_user: {{ user }}
   flatpak:
-    name: com.spotify.Client
+    name: org.remmina.Remmina
     method: user
     state: present

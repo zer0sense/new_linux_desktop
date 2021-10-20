@@ -1,7 +1,7 @@
 ---
-- name: Install Obsidian
+- name: Install Zoom
   become_user: {{ user }}
   flatpak:
-    name: md.obsidian.Obsidian
+    name: us.zoom.Zoom
     method: user
     state: present

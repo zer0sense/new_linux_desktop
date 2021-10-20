@@ -1,0 +1,4 @@
+---
+- name: Install Caffeine
+  package:
+    name: caffeine

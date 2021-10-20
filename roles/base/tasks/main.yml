@@ -15,6 +15,7 @@
       - spice-vdagent
       - snapd
       - flatpack
+      - docker
 
 - name: Copy Alias File
   copy:
@@ -51,3 +52,10 @@
       owner: "{{ user }}"
       group: "{{ user }}"
       mode: 0775
+
+- name: Copy NeoVIM config
+    copy:
+      src: files/neovim
+      dest: "{{ home }}/.config/nvim/init.vim"
+      owner: "{{ user }}"
+      group: "{{ user }}"

@@ -1,2 +1,7 @@
 ---
 - name: Install Flameshot
+  become_user: {{ user }}
+  flatpak:
+    name: org.flameshot.Flameshot
+    method: user
+    state: present

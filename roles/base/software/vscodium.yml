@@ -1,7 +1,7 @@
 ---
-- name: Install Obsidian
+- name: Install VSCodium
   become_user: {{ user }}
   flatpak:
-    name: md.obsidian.Obsidian
+    name: com.vscodium.codium
     method: user
     state: present
