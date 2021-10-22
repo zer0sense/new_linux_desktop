@@ -4,6 +4,15 @@
   package:
     name:
       - alacritty
+    state: present
+
+- name: Make NeoVIM Folder
+  file:
+    path: "{{ home }}/.config/alacritty"
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0775
 
 
 - name: Copy Alacritty config
