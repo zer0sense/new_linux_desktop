@@ -74,3 +74,9 @@
       - neovim
     state: present
 
+- name: Install Python
+  become: true
+    name: 
+      - python3
+      - python3-pip
+
