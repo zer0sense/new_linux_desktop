@@ -1,0 +1,8 @@
+---
+- name: Virtualization
+  include_tasks:
+    file: virt.yml
+
+- name: ZSH Syntax
+  include_tasks:
+    file: zsh.yml
