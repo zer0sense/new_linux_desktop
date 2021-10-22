@@ -6,3 +6,9 @@
     classic: yes  
     state: present
 
+- name: Snap Classic Link
+  become: yes
+  file:
+    src: "/var/lib/snapd/snap"
+    dest: "/snap"
+    state: link
