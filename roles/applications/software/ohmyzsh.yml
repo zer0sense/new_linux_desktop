@@ -2,7 +2,7 @@
 - name: Check if oh-my-zsh is already installed
   stat: path="/usr/share/oh-my-zsh"
   register: haziohymyzsh
-  tags: ['ohmyzsh']
+ 
 
 - name: Clone oh-my-zsh
   git:
@@ -19,7 +19,6 @@
   args:
     chdir: ""{{ home }}/git/ohmyzsh"/ohmyzsh/tools/"
   when: not haziohymyzsh.stat.exists
-  tags: ['ohmyzsh']
 
 - name: Install ZSH syntax Highlighting
   git:
