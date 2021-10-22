@@ -9,9 +9,9 @@
 - name: Link for Classic Snap
   become: yes
   file:
-    src: "/var/snapd/snap"
+    src: "/var/snap/snapd"
     dest: "/snap"
     state: link
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: 0775
+    uid: "0"
+    gid: "0"
+    mode: 0755
