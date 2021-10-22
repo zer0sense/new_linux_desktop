@@ -76,12 +76,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize sublime emoji magic-enter python pip archlinux)
+plugins=(git colorize emoji magic-enter sudo python pip)
 
 source $ZSH/oh-my-zsh.sh
-
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 source $HOME/.alias
 
 # User configuration

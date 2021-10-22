@@ -7,7 +7,6 @@
       - tmux
       - htop
       - zsh
-      - zsh-syntax-highlighting
       - curl
       - cmake
       - pkg-config
@@ -59,3 +58,12 @@
       dest: "{{ home }}/.config/nvim/init.vim"
       owner: "{{ user }}"
       group: "{{ user }}"
+
+- name: Install ZSH syntax Highlighting
+  git:
+    clone: yes
+    update: yes
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "{{ home }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+    owner: "{{ user }}"
+    group: "{{ user }}"

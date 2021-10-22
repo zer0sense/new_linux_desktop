@@ -6,11 +6,18 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias vim=nvim
-alias cat=bat
-
+alias cat='bat --color=auto' 
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip --color=auto'
 
 # Copy to clipboard
 alias clip='xclip  -selection clipboard'
+
+# Phone Screen Mirror
+alias phone='scrcpy'
 
 # Navigation
 alias ..='cd ..' 

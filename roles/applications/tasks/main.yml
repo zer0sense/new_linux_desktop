@@ -1,0 +1,18 @@
+---
+- Name: Install Software Packages
+  import task: software/alacritty.yml
+  import task: software/caffeine.yml
+  import task: software/discord.yml
+  import task: software/flameshot.yml
+  import task: software/mailspring.yml
+  import task: software/obsidian.yml
+  import task: software/ohmyzsh.yml
+  import task: software/rambox.yml
+  import task: software/remmina.yml
+  import task: software/signal.yml
+  import task: software/spotify.yml
+  import task: software/stacer.yml
+  import task: software/teams.yml
+  import task: software/timeshift.yml
+  import task: software/vscodium.yml
+  import task: software/zoom.yml
