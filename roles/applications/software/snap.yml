@@ -5,3 +5,10 @@
     name:
       - snapd
     state: present
+
+- name: Link for Classic Snap
+  become: yes
+  file:
+    src: "/snap"
+    dest: "/var/lib/snapd/snap"
+    state: link
