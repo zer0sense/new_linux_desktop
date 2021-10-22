@@ -1,9 +1,5 @@
 ---
-vars:
-    user: "{{ lookup('env', 'USER') }}"
-    home: "{{ lookup('env', 'HOME') }}"
-    
-- name: Install Alacritty
+ - name: Install Alacritty
   include_tasks:
     file: software/alacritty.yml
 
