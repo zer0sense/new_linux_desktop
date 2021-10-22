@@ -12,3 +12,6 @@
     src: "/var/snapd/snap"
     dest: "/snap"
     state: link
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0775
