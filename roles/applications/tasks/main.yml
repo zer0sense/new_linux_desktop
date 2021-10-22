@@ -1,4 +1,60 @@
 ---
-- name: Install Alacritty.
+- name: Install Alacritty
   include_tasks:
     file: software/alacritty.yml
+
+- name: Install Caffeine
+  include_tasks:
+    file: software/caffeine.yml
+
+- name: Install Discord
+  include_tasks:
+    file: software/discord.yml
+
+- name: Install Flameshot
+  include_tasks:
+    file: software/flameshot.yml
+
+- name: Install Mailspring
+  include_tasks:
+    file: software/mailspring.yml
+
+- name: Install Obsidian
+  include_tasks:
+    file: software/obsidian.yml
+
+- name: Install ohMyZSH
+  include_tasks:
+    file: software/ohmyzsh.yml
+
+- name: Install rambox
+  include_tasks:
+    file: software/rambox.yml
+
+- name: Install Remmina
+  include_tasks:
+    file: software/remmina.yml
+
+- name: Install Signal
+  include_tasks:
+    file: software/signal.yml
+
+- name: Install Spotify
+  include_tasks:
+    file: software/spotify.yml
+
+- name: Install Teams
+  include_tasks:
+    file: software/teams.yml
+
+- name: Install timeshift.
+  include_tasks:
+    file: software/timeshift.yml
+
+- name: Install VSCodium
+  include_tasks:
+    file: software/vscodium.yml
+
+- name: Install Zoom.
+  include_tasks:
+    file: software/zoom.yml
