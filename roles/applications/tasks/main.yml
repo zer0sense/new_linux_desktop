@@ -23,6 +23,10 @@
   include_tasks:
     file: software/timeshift.yml
 
+- name: Install Brave
+  include_tasks:
+    file: software/brave.yml
+
 - name: Install Alacritty
   include_tasks:
     file: software/alacritty.yml
@@ -75,6 +79,4 @@
   include_tasks:
     file: tools/zsh.yml
 
-- name: Install Brave
-  include_tasks:
-    file: software/brave.yml
+
