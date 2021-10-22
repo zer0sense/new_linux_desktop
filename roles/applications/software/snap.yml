@@ -12,6 +12,3 @@
     src: "/var/snap/snapd"
     dest: "/snap"
     state: link
-    owner: "root"
-    gid: "root"
-    mode: 0755
