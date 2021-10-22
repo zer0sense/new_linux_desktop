@@ -1,0 +1,7 @@
+---
+- name: Snap
+  become: true
+  package:
+    name:
+      - snap
+    state: present
