@@ -4,5 +4,6 @@
   package:
     name:
       - snapd
+    classic: yes  
     state: present
 
