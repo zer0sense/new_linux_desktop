@@ -16,7 +16,7 @@
     export ZSH="{{ home }}/git/ohmyzsh" && \
     sh -c './install.sh --unattended'
   args:
-    chdir: "{{ home }}/git/ohmyzsh"/ohmyzsh/tools/"
+    chdir: "{{ home }}/git/ohmyzsh/ohmyzsh/tools/"
   when: not haziohymyzsh.stat.exists
 
 - name: Install ZSH syntax Highlighting
