@@ -1,6 +1,8 @@
 ---
 - name: Install Rambox
+  become: true
   community.general.snap:
     name: rambox
+    classic: yes
     state: present
 
