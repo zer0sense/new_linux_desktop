@@ -1,12 +1,4 @@
 ---
-- name: Install Alacritty
-  include_tasks:
-    file: software/alacritty.yml
-
-- name: Install Caffeine
-  include_tasks:
-    file: software/caffeine.yml
-
 - name: Install Flatpak
   include_tasks:
     file: software/flatpak.yml
@@ -14,6 +6,10 @@
 - name: Install Snap
   include_tasks:
     file: software/snap.yml
+
+- name: Install Alacritty
+  include_tasks:
+    file: software/alacritty.yml
 
 - name: Install Discord
   include_tasks:
@@ -55,7 +51,7 @@
   include_tasks:
     file: software/teams.yml
 
-- name: Install timeshift.
+- name: Install Timeshift
   include_tasks:
     file: software/timeshift.yml
 
