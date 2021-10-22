@@ -7,6 +7,10 @@
   include_tasks:
     file: software/caffeine.yml
 
+- name: Install Flatpak
+  include_tasks:
+    file: software/flatpak.yml
+
 - name: Install Discord
   include_tasks:
     file: software/discord.yml

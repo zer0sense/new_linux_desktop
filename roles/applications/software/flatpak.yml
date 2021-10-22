@@ -1,0 +1,7 @@
+---
+- name: Flatpak
+  become: true
+  package:
+    name:
+      - flatpak
+    state: present
