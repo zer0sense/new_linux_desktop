@@ -72,5 +72,5 @@
     name:
       - vim
       - neovim
-
+    state: present
 
