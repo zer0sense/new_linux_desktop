@@ -31,11 +31,11 @@
     group: "{{ user }}"
 
 - name: Copy ZSH File
-    copy:
-      src: files/zsh
-      dest: "{{ home }}/.zshrc"
-      owner: "{{ user }}"
-      group: "{{ user }}"
+  copy:
+    src: files/zsh
+    dest: "{{ home }}/.zshrc"
+    owner: "{{ user }}"
+    group: "{{ user }}"
 
 - name: Copy TMUX config
     copy:
