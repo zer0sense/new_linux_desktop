@@ -1,0 +1,6 @@
+---
+- name: Install Brave
+  become: true
+  community.general.snap:
+    name: brave
+    state: present
