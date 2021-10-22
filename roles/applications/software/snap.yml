@@ -9,6 +9,6 @@
 - name: Link for Classic Snap
   become: yes
   file:
-    src: "/snap"
-    dest: "/var/lib/snapd/snap"
+    src: "/var/snapd/snap"
+    dest: "/snap"
     state: link
