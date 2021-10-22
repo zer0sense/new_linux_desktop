@@ -3,7 +3,6 @@
   become: true
   package:
     name: snapd
-    classic: yes  
     state: present
 
 - name: Snap Classic Link
