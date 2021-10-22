@@ -1,5 +1,5 @@
 ---
- - name: Install Alacritty
+- name: Install Alacritty
   include_tasks:
     file: software/alacritty.yml
 
