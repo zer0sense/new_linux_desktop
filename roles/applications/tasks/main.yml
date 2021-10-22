@@ -1,5 +1,6 @@
 ---
 - Name: Install Software Packages
+  tasks:  
     - include_tasks:  software/alacritty.yml
     - include_tasks:  software/caffeine.yml
     - include_tasks:  software/discord.yml
