@@ -1,16 +1,25 @@
 ---
-- name: Clone ohmyzsh
-  git:
-    clone: yes
-    repo: https://github.com/ohmyzsh/ohmyzsh.git
-    dest: "{{ home }}/git/ohmyzsh"
-    update: yes
+- name: Check if oh-my-zsh is already installed
+  stat: path="/usr/share/oh-my-zsh"
+  register: haziohymyzsh
+  tags: ['ohmyzsh']
 
-- name: Install ohmyzsh
-  shell:
-    chdir: "{{ home }}/git/ohmyzsh/tools"
-    executable: "{{ home }}/git/ohmyzsh/tools/install.sh"
-    cmd: install.sh
+- name: Clone oh-my-zsh
+  git:
+    repo: "https://github.com/ohmyzsh/ohmyzsh.git"
+    dest: "{{ home }}/git/ohmyzsh"
+    accept_hostkey: yes
+    update: no
+    force: no
+
+- name: Install oh-my-zsh
+  shell: |
+    export ZSH=""{{ home }}/git/ohmyzsh"" && \
+    sh -c './install.sh --unattended'
+  args:
+    chdir: ""{{ home }}/git/ohmyzsh"/ohmyzsh/tools/"
+  when: not haziohymyzsh.stat.exists
+  tags: ['ohmyzsh']
 
 - name: Install ZSH syntax Highlighting
   git:
