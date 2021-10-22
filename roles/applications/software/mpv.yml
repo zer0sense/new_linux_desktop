@@ -1,0 +1,6 @@
+---
+- name: Install MPV
+  become: true
+  package:
+    name: mpv
+    state: present
