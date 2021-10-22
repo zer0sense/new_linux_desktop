@@ -3,5 +3,5 @@
   become: true
   package:
     name:
-      - snap
+      - snapd
     state: present
