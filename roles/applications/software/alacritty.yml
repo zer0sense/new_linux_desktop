@@ -8,7 +8,7 @@
 
 - name: Copy Alacritty config
   copy:
-    src: /base/files/alacritty
+    src: files/alacritty
     dest: "{{ home }}/.config/alacritty/alacritty.yml"
     owner: "{{ user }}"
     group: "{{ user }}"
