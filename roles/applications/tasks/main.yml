@@ -7,6 +7,22 @@
   include_tasks:
     file: software/snap.yml
 
+- name: Install Caffeine
+  include_tasks:
+    file: software/caffeine.yml
+
+- name: Install Rambox
+  include_tasks:
+    file: software/rambox.yml
+
+- name: Install MPV
+  include_tasks:
+    file: software/mpv.yml
+
+- name: Install Timeshift
+  include_tasks:
+    file: software/timeshift.yml
+
 - name: Install Alacritty
   include_tasks:
     file: software/alacritty.yml
@@ -31,10 +47,6 @@
   include_tasks:
     file: software/ohmyzsh.yml
 
-- name: Install rambox
-  include_tasks:
-    file: software/rambox.yml
-
 - name: Install Remmina
   include_tasks:
     file: software/remmina.yml
@@ -51,10 +63,6 @@
   include_tasks:
     file: software/teams.yml
 
-- name: Install Timeshift
-  include_tasks:
-    file: software/timeshift.yml
-
 - name: Install VSCodium
   include_tasks:
     file: software/vscodium.yml
@@ -70,7 +78,3 @@
 - name: Install Brave
   include_tasks:
     file: software/brave.yml
-
-- name: Install MPV
-  include_tasks:
-    file: software/mpv.yml

@@ -15,6 +15,21 @@
       - snapd
       - docker
 
+- name: Install Vim
+  become: true
+  package:
+    name:
+      - vim
+      - neovim
+    state: present
+
+- name: Install Python
+  become: true
+  package:
+    name: 
+      - python3
+    state: present
+
 - name: Copy Alias File
   copy:
     src: files/alias
@@ -66,18 +81,5 @@
     owner: "{{ user }}"
     group: "{{ user }}"
 
-- name: Install Vim
-  become: true
-  package:
-    name:
-      - vim
-      - neovim
-    state: present
 
-- name: Install Python
-  become: true
-  package:
-    name: 
-      - python3
-    state: present
 
