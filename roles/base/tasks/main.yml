@@ -13,7 +13,7 @@
       - neofetch
       - spice-vdagent
       - snapd
-      - flatpack
+      - flatpak
       - docker
 
 - name: Copy Alias File
