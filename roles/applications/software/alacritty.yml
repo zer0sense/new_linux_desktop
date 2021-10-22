@@ -3,7 +3,6 @@
   become: true
   community.general.snap:
     name: alacritty
-    classic: yes
     state: present
 
 - name: Make Alacritty Folder
