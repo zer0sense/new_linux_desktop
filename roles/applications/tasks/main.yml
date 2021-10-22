@@ -1,4 +1,4 @@
 ---
 - name: Install Alacritty.
   include_tasks:
-    file: alacritty.yaml
+    file: software/alacritty.yaml
