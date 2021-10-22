@@ -1,13 +1,22 @@
 ---
- - name: Clone ohmyzsh
-    git:
-      clone: yes
-      repo: https://github.com/ohmyzsh/ohmyzsh.git
-      dest: "{{ home }}/git/ohmyzsh"
-      update: yes
+- name: Clone ohmyzsh
+  git:
+    clone: yes
+    repo: https://github.com/ohmyzsh/ohmyzsh.git
+    dest: "{{ home }}/git/ohmyzsh"
+    update: yes
 
-  - name: Install ohmyzsh
-    shell:
-      chdir: "{{ home }}/git/ohmyzsh/tools"
-      executable: "{{ home }}/git/ohmyzsh/tools/install.sh"
-      cmd: install.sh
+- name: Install ohmyzsh
+  shell:
+    chdir: "{{ home }}/git/ohmyzsh/tools"
+    executable: "{{ home }}/git/ohmyzsh/tools/install.sh"
+    cmd: install.sh
+
+- name: Install ZSH syntax Highlighting
+  git:
+    clone: yes
+    update: yes
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "{{ home }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+    owner: "{{ user }}"
+    group: "{{ user }}"
