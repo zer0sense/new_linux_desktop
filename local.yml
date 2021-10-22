@@ -23,4 +23,5 @@
   roles:
     - role: base
     - role: applications
+    - role: tools
 
