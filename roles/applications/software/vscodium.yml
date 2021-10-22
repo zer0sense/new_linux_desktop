@@ -1,6 +1,5 @@
 ---
 - name: Install VSCodium
-  become_user: {{ user }}
   flatpak:
     name: com.vscodium.codium
     method: user

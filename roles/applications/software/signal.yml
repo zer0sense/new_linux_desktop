@@ -1,5 +1,4 @@
 - name: Install Signal
-  become_user: {{ user }}
   flatpak:
     name: org.signal.Signal
     method: user

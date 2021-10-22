@@ -1,6 +1,5 @@
 ---
 - name: Install Spotify
-  become_user: {{ user }}
   flatpak:
     name: com.spotify.Client
     method: user

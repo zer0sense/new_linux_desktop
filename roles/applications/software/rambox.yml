@@ -1,5 +1,5 @@
 ---
-- name: Install foo
+- name: Install Rambox
   community.general.snap:
     name: rambox
     state: present

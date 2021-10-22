@@ -1,6 +1,5 @@
 ---
 - name: Install Zoom
-  become_user: {{ user }}
   flatpak:
     name: us.zoom.Zoom
     method: user

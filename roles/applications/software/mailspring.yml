@@ -1,6 +1,5 @@
 ---
 - name: Install Mailspring
-  become_user: {{ user }}
   flatpak:
     name: com.getmailspring.Mailspring
     method: user

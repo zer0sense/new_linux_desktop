@@ -1,6 +1,5 @@
 ---
 - name: Install Remina
-  become_user: {{ user }}
   flatpak:
     name: org.remmina.Remmina
     method: user

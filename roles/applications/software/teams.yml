@@ -1,5 +1,4 @@
 - name: Install Teams
-  become_user: {{ user }}
   flatpak: com.microsoft.Teams
     name: org.signal.Signal
     method: user
