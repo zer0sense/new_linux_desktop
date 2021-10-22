@@ -1,12 +1,11 @@
 ---
-- name: Install alacritty.
+- name: Install Alacritty
   become: true
-  package:
-    name:
-      - alacritty
+  community.general.snap:
+    name: alacritty
     state: present
 
-- name: Make NeoVIM Folder
+- name: Make Alacritty Folder
   file:
     path: "{{ home }}/.config/alacritty"
     state: directory

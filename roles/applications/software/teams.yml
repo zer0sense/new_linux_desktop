@@ -1,5 +1,5 @@
 - name: Install Teams
-  flatpak: com.microsoft.Teams
-    name: org.signal.Signal
+  flatpak:
+    name: com.microsoft.Teams
     method: user
     state: present
