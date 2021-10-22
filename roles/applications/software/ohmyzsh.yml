@@ -1,9 +1,8 @@
 ---
 - name: Check if oh-my-zsh is already installed
-  stat: path=""{{ home }}/git/ohmyzsh""
+  stat: path="{{ home }}/git/ohmyzsh"
   register: haziohymyzsh
  
-
 - name: Clone oh-my-zsh
   git:
     repo: "https://github.com/ohmyzsh/ohmyzsh.git"
