@@ -67,6 +67,7 @@
     group: "{{ user }}"
 
 - name: Install Vim
+  become: true
   package:
     name:
       - vim
