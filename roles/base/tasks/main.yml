@@ -66,4 +66,10 @@
     owner: "{{ user }}"
     group: "{{ user }}"
 
+- name: Install Vim
+  package:
+    name:
+      - vim
+      - neovim
+
 
