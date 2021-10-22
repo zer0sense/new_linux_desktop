@@ -13,7 +13,7 @@
 
 - name: Install oh-my-zsh
   shell: |
-    export ZSH=""{{ home }}/git/ohmyzsh"" && \
+    export ZSH="{{ home }}/git/ohmyzsh" && \
     sh -c './install.sh --unattended'
   args:
     chdir: "{{ home }}/git/ohmyzsh"/ohmyzsh/tools/"
