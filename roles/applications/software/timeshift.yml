@@ -1,5 +1,6 @@
 ---
 - name: Install Timeshift
   become: true
-  package: timeshift
+  package:
+    name: timeshift
     state: present
