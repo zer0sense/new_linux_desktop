@@ -38,26 +38,26 @@
     group: "{{ user }}"
 
 - name: Copy TMUX config
-    copy:
-      src: files/tmux
-      dest: "{{ home }}/.tmux.conf"
-      owner: "{{ user }}"
-      group: "{{ user }}"
+  copy:
+    src: files/tmux
+    dest: "{{ home }}/.tmux.conf"
+    owner: "{{ user }}"
+    group: "{{ user }}"
 
  - name: Make git Folder
-    file:
-      path: "{{ home }}/git/"
-      state: directory
-      owner: "{{ user }}"
-      group: "{{ user }}"
-      mode: 0775
+  file:
+    path: "{{ home }}/git/"
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0775
 
 - name: Copy NeoVIM config
-    copy:
-      src: files/neovim
-      dest: "{{ home }}/.config/nvim/init.vim"
-      owner: "{{ user }}"
-      group: "{{ user }}"
+  copy:
+    src: files/neovim
+    dest: "{{ home }}/.config/nvim/init.vim"
+    owner: "{{ user }}"
+    group: "{{ user }}"
 
 - name: Install ZSH syntax Highlighting
   git:
