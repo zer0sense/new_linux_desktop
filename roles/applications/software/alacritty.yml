@@ -1,7 +1,7 @@
 ---
 - name: Install Alacritty
   become: true
-  community.general.snap:
+  snap:
     name: alacritty
     classic: yes
     state: present
