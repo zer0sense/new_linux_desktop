@@ -11,3 +11,5 @@
     src: "/var/lib/snapd/snap"
     dest: "/snap"
     state: link
+  when:
+    - ansible_distribution == "Archlinux"
