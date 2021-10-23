@@ -13,7 +13,7 @@
 
 - name: Install oh-my-zsh
   shell: |
-    ZSH=~/git/oh-my-my-zsh && sh -c ~/git/ohmyzsh/tools/install.sh --unattended
+    ZSH=~/git/oh-my-zsh && sh -c ~/git/ohmyzsh/tools/install.sh --unattended
   when: not haziohymyzsh.stat.exists
 
 - name: Install ZSH syntax Highlighting
