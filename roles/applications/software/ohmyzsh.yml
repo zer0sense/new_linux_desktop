@@ -23,3 +23,10 @@
     repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
     dest: "{{ home }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 
+- name: Copy ZSH File
+  copy:
+    src: files/zsh
+    dest: "{{ home }}/.zshrc"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+
