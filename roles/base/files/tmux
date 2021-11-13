@@ -30,10 +30,10 @@ set -g default-terminal screen-256color
 bind -n C-S-Up resize-pane -Z
 
 # Kill Pane
-bind -n C-M-x kill-pane
+bind -n M-k kill-pane
 
 # Kill Window
-bind -n C-S-x kill-window
+bind -n M-w kill-window
 
 # New Window
 bind -n C-n new-window -a
