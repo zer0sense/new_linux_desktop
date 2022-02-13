@@ -19,10 +19,6 @@
   include_tasks:
     file: software/mpv.yml
 
-- name: Install Timeshift
-  include_tasks:
-    file: software/timeshift.yml
-
 - name: Install Brave
   include_tasks:
     file: software/brave.yml
@@ -71,12 +67,10 @@
   include_tasks:
     file: software/vscodium.yml
 
-- name: Install Zoom.
+- name: Install Zoom
   include_tasks:
     file: software/zoom.yml
 
 - name: ZSH Plugins
   include_tasks:
     file: tools/zsh.yml
-
-
