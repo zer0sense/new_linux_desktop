@@ -1,6 +1,9 @@
 #added via ansible
 # General
-alias cp="cp -i"                          # confirm before overwriting something
+alias cp='cp -i'                          # confirm before overwriting something
+alias rm='rm -i'                          # confirm removal
+alias mv='mv -i'                          #confirm moving
+alias ln='ln -i'                          #confirm link
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
@@ -12,6 +15,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias diff='diff --color=auto'
 alias ip='ip --color=auto'
+alias ls=exa
+alias mkdir='mkdir -pv'
 
 # Copy to clipboard
 alias clip='xclip  -selection clipboard'
@@ -70,30 +75,6 @@ alias sr="sudo reboot"
 # Apt Package Manager
 alias aptu="sudo apt update && sudo apt upgrade -yy"
 alias aptd="sudo apt dist-upgrade"
-
-# # ex - archive extractor
-# # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
 
 #NeoFetch 
 neofetch
