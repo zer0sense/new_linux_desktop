@@ -1,6 +1,0 @@
----
-- name: Install Caffeine
-  become: true
-  package:
-    name: caffeine
-    state: present
