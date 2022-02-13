@@ -7,10 +7,6 @@
   include_tasks:
     file: software/snap.yml
 
-- name: Install Caffeine
-  include_tasks:
-    file: software/caffeine.yml
-
 - name: Install Rambox
   include_tasks:
     file: software/rambox.yml
