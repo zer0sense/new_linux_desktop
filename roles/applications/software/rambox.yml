@@ -3,6 +3,5 @@
   become: true
   snap:
     name: rambox
-    classic: no
     state: present
 
