@@ -10,12 +10,12 @@ The only way I am able to get this working is by using sudo and running a comman
 If you are using a debian based distrobution with APT as the package manager you can use this
 
 ```
-sudo apt update && ansible-pull -U https://github.com/zer0sense/ansible_desktop
+sudo apt update && ansible-pull -U https://github.com/zer0sense/new_ansible_desktop
 ```
 If you are using an Arch Based distrobution with PACMAN you can use this.
 
 ```
-sudo pacman -Sy && ansible-pull -U https://github.com/zer0sense/ansible_desktop
+sudo pacman -Sy && ansible-pull -U https://github.com/zer0sense/new_ansible_desktop
 ```
 
 I am not able to get nerd-fonts to install through ansible, so you will have to run the install script manually.
