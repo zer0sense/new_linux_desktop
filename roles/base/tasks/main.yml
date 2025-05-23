@@ -9,8 +9,7 @@
       - zsh
       - neofetch
       - snapd
-      - docker
-      - exa
+      - eza
       - bat
     state: present
 
