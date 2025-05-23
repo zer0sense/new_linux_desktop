@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-=======
-live_config_reload = true
-
-
-[colors]
-draw_bold_text_with_bright_colors = true
-
-[colors.bright]
-black = "#696969"
-blue = "#007FFF"
-cyan = "#00CCCC"
-green = "#03C03C"
-magenta = "#FF1493"
-red = "#FF2400"
-white = "#FFFAFA"
-yellow = "#FDFF00"
-
-[colors.normal]
-black = "#10100E"
-blue = "#0087BD"
-cyan = "#20B2AA"
-green = "#009F6B"
-magenta = "#9A4EAE"
-red = "#C40233"
-white = "#C6C6C4"
-yellow = "#FFD700"
-
-[colors.primary]
-background = "#10100E"
-foreground = "#C6C6C4"
-
->>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
 [env]
 TERM = "xterm-256color"
 
@@ -38,20 +5,6 @@ TERM = "xterm-256color"
 normal = { family = "Hack", style = "regular" }
 size = 11.5
 
-<<<<<<< HEAD
-=======
-#bold = { family = "Hack", style = "Bold"}
-#family = "Hack"
-#style = "Bold Italic"
-
-#[font.italic]
-#family = "Hack"
-#style = "Italic"
-
-#[font.normal]
-#family = "Hack"
-
->>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
 [font.offset]
 x = 0
 y = 1
@@ -146,11 +99,7 @@ mods = "Shift"
 [scrolling]
 history = 10000
 
-<<<<<<< HEAD
 [terminal.shell]
-=======
-[shell]
->>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
@@ -167,12 +116,9 @@ instance = "Alacritty"
 [window.padding]
 x = 3
 y = 3
-<<<<<<< HEAD
 
 [general]
 import = ["~/.config/alacritty/themes/themes/cyber_punk_neon.toml"]
 live_config_reload = true
 
 [terminal]
-=======
->>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
