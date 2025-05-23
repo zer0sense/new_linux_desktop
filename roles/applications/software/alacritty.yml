@@ -21,3 +21,18 @@
     dest: "{{ home }}/.config/alacritty/alacritty.toml"
     owner: "{{ user }}"
     group: "{{ user }}"
+
+- name: Make Alacritty Folder
+  file:
+    path: "{{ home }}/.config/alacritty/themes"
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: 0775
+
+- name: Clone Alacritty Theme
+  git:
+    clone: yes
+    repo: https://github.com/alacritty/alacritty-theme.git
+    dest: "{{ home }}/.config/alacritty/themes"
+    update: yes

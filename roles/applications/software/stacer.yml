@@ -1,2 +1,6 @@
 ---
 - name: Install Stacer
+  become: true
+  package:
+    name: stacer
+    state: present

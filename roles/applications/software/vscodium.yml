@@ -1,6 +1,6 @@
 ---
-- name: Install VSCodium
+- name: Install VSCode
   flatpak:
-    name: com.vscodium.codium
+    name: com.visualstudio.code
     method: user
     state: present

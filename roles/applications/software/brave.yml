@@ -1,6 +1,7 @@
 ---
 - name: Install Brave
   become: true
-  snap:
-    name: brave
+  flatpak:
+    name: com.brave.Browser
+    method: user
     state: present

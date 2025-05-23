@@ -3,8 +3,6 @@
   include_tasks:
     file: software/ohmyzsh.yml
 
-<<<<<<< HEAD
-=======
 - name: Install Remmina
   include_tasks:
     file: software/remmina.yml
@@ -13,7 +11,7 @@
   include_tasks:
     file: software/signal.yml
 
-- name: Install VSCodium
+- name: Install VSCode
   include_tasks:
     file: software/vscodium.yml
 
@@ -21,7 +19,62 @@
   include_tasks:
     file: software/zoom.yml
 
->>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
 - name: ZSH Plugins
   include_tasks:
     file: tools/zsh.yml
+
+- name: Install Alacritty 
+  include_tasks:
+    file: software/alacritty.yml
+
+- name: Install Brave
+  include_tasks:
+    file: software/brave.yml
+
+- name: Install Discord
+  include_tasks:
+    file: software/discord.yml
+
+- name: Install Flameshot
+  include_tasks:
+    file: software/flameshot.yml
+
+- name: Flatpak Config
+  include_tasks:
+    file: software/flatpak.yml
+
+- name: Install Mailspring
+  include_tasks:
+    file: software/mailspring.yml
+
+- name: Install MPV
+  include_tasks:
+    file: software/mpv.yml
+
+- name: Install Obsidian
+  include_tasks:
+    file: software/obsidian.yml
+
+- name: Install Rambox
+  include_tasks:
+    file: software/rambox.yml
+
+- name: Snap Config
+  include_tasks:
+    file: software/snap.yml
+
+- name: Install Stacer
+  include_tasks:
+    file: software/stacer.yml
+
+- name:Install Teams
+  include_tasks:
+    file: software/teams.yml
+
+- name:Install Timeshift
+  include_tasks:
+    file: software/timeshift.yml
+
+- name:Install Zoom
+  include_tasks:
+    file: softare/zoom.yml
