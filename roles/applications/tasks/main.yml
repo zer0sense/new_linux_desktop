@@ -3,6 +3,25 @@
   include_tasks:
     file: software/ohmyzsh.yml
 
+<<<<<<< HEAD
+=======
+- name: Install Remmina
+  include_tasks:
+    file: software/remmina.yml
+
+- name: Install Signal
+  include_tasks:
+    file: software/signal.yml
+
+- name: Install VSCodium
+  include_tasks:
+    file: software/vscodium.yml
+
+- name: Install Zoom
+  include_tasks:
+    file: software/zoom.yml
+
+>>>>>>> 2c18e8be4d3124250afb7f748cd64cbf8e3fb59f
 - name: ZSH Plugins
   include_tasks:
     file: tools/zsh.yml

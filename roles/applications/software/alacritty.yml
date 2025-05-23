@@ -18,6 +18,6 @@
 - name: Copy Alacritty config
   copy:
     src: files/alacritty
-    dest: "{{ home }}/.config/alacritty/alacritty.yml"
+    dest: "{{ home }}/.config/alacritty/alacritty.toml"
     owner: "{{ user }}"
     group: "{{ user }}"
