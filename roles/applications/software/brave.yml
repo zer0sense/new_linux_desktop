@@ -1,7 +1,8 @@
 ---
-- name: Install Brave
-  become: true
-  flatpak:
-    name: com.brave.Browser
-    method: user
-    state: present
+- name: Ensure Flathub remote is added
+  ansible.builtin.command: >
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+- name: Install Brave via Flatpak non-interactively
+  ansible.builtin.command: >
+    flatpak install --noninteractive -y flathub com.brave.Browser
