@@ -71,10 +71,10 @@
   include_tasks:
     file: software/teams.yml
 
-- name:Install Timeshift
+- name: Install Timeshift
   include_tasks:
     file: software/timeshift.yml
 
-- name:Install Zoom
+- name: Install Zoom
   include_tasks:
-    file: softare/zoom.yml
+    file: software/zoom.yml
