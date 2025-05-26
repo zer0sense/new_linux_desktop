@@ -63,10 +63,6 @@
   include_tasks:
     file: software/snap.yml
 
-- name: Install Stacer
-  include_tasks:
-    file: software/stacer.yml
-
 - name: Install Teams
   include_tasks:
     file: software/teams.yml
