@@ -67,7 +67,7 @@
   include_tasks:
     file: software/stacer.yml
 
-- name:Install Teams
+- name: Install Teams
   include_tasks:
     file: software/teams.yml
 
