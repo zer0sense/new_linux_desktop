@@ -3,6 +3,10 @@
   include_tasks:
     file: software/ohmyzsh.yml
 
+- name: Install Remmina
+  include_tasks:
+    file: software/remmina.yml
+
 - name: Install Signal
   include_tasks:
     file: software/signal.yml
