@@ -1,5 +1,5 @@
 ---
-- name: Install Remina
+- name: Install Remmina
   flatpak:
     name: org.remmina.Remmina
     method: user
