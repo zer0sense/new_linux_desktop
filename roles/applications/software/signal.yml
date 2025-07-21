@@ -3,6 +3,6 @@
     name: org.signal.Signal
     method: user
     state: present
-    remote: signal
+    remote: flathub
 
 
