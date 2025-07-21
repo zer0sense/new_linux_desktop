@@ -3,10 +3,6 @@
   include_tasks:
     file: software/ohmyzsh.yml
 
-- name: Install Remmina
-  include_tasks:
-    file: software/remmina.yml
-
 - name: Install Signal
   include_tasks:
     file: software/signal.yml
@@ -62,10 +58,6 @@
 - name: Snap Config
   include_tasks:
     file: software/snap.yml
-
-- name: Install Teams
-  include_tasks:
-    file: software/teams.yml
 
 - name: Install Timeshift
   include_tasks:
