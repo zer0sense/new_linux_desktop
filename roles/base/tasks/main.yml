@@ -7,7 +7,6 @@
       - tmux
       - htop
       - zsh
-      - neofetch
       - snapd
       - eza
       - bat
