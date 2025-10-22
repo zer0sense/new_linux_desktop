@@ -79,5 +79,3 @@ alias aptd="sudo apt dist-upgrade"
 # Flatpak
 alias codium="com.vscodium.codium"
 
-#NeoFetch 
-neofetch
